@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <style>
+        /* Genel sayfa stili */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #4e73df, #1e3c72);
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 50px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #1e3c72;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            color: #555;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        /* Logo stili */
+        .logo {
+            width: 150px;
+            margin-bottom: 30px;
+            filter: brightness(0) invert(1);
+        }
+
+        /* Buton stili */
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 1.3rem;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 123, 255, 0.2);
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 123, 255, 0.3);
+        }
+
+        .btn:active {
+            background-color: #004085;
+            transform: translateY(0);
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+        }
+
+        /* Responsive tasarım */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 2.4rem;
+            }
+
+            .btn {
+                padding: 12px 30px;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Farklı bir logo ekledim, kendi logonuzu buraya yerleştirebilirsiniz -->
+        <h1>Araç Muayene Randevusu</h1>
+        <p>Aracınızın muayene randevusunu almak için aşağıdaki butona tıklayın. Randevu almak çok kolay!</p>
+        <a href="bakiye_yukleme.html" class="btn" target="_blank">Randevu Al</a>
+    </div>
+</body>
+</html>
